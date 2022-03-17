@@ -14,10 +14,8 @@ it(`Login Test`, async () => {
   // 인풋 요소가 뜰때까지 대기
   await page.waitForSelector('#id01');
   // 타이핑
-  await page.type('#id01', id, {delay: 200});
-  await page.type('#password01', password, {delay: 200});
-
-  onClickNavigate(page)('#loginButton',2000);
+  await page.type('#id01', id, {delay: 100});
+  await page.type('#password01', password, {delay: 100});
 
   // 버튼 클릭
   await page.click('#loginButton');
